@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script 
+
+    src="https://ui5.sap.com/1.126.0/resources/sap-ui-core.js"
+    data-sap-ui-theme="sap_horizon"
+    data-sap-ui-libs="sap.m"
+    data-sap-ui-resource-roots='{
+			"testak": "./"
+		}'></script>
+    <script>
+      // var obutt = new sap.m.Button("test1",{
+      //   text : "my button",
+      //   press: function() {
+      //       $("#test1").fadeOut(3000);
+      //   }
+      // });
+      // obutt.placeAt("test");
+
+      var oview = new sap.ui.view("test2",
+        {
+          viewName: "testak.view.main",
+          type : "JS"
+        }
+      );
+      oview.placeAt("test"); 
+    </script>
+</head>
+<body>
+    <div id="test"></div>
+    
+</body>
+</html>
